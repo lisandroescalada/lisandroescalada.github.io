@@ -9,6 +9,114 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">SonidoTotal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reseñas">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link boton-carrito" href="./carrito.html">
+                                Carrito <span id="numerito">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="separador">
+            <h2 id="productos">Productos</h2>
+        </div>
+
+        <section id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+        </section>
+
+        <div class="separador">
+            <h2 id="reseñas">Reseñas</h2>
+        </div>
+
+        <section id="contenedor-reseñas" class="contenedor-reseñas">
+            <article class="reseña-detalles">
+                <div class="reseña-arriba">
+                    <img class="reseña-imagen" src="https://via.placeholder.com/50" alt="Foto de perfil de Juan Pérez">
+                    <div class="reseña-derecha">
+                        <h3 class="reseña-nombre">Juan Pérez</h3>
+                        <p class="reseña-calificacion">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <p class="reseña-comentario">Excelente servicio, todo llegó a tiempo y en perfectas condiciones. Sin duda, volveré a comprar aquí.</p>
+            </article>
+            <article class="reseña-detalles">
+                <div class="reseña-arriba">
+                    <img class="reseña-imagen" src="https://via.placeholder.com/50" alt="Foto de perfil de María López">
+                    <div class="reseña-derecha">
+                        <h3 class="reseña-nombre">María López</h3>
+                        <p class="reseña-calificacion">⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <p class="reseña-comentario">El producto es de buena calidad, aunque la entrega se retrasó un poco. Aun así, estoy satisfecha con la compra.</p>
+            </article>
+            <article class="reseña-detalles">
+                <div class="reseña-arriba">
+                    <img class="reseña-imagen" src="https://via.placeholder.com/50" alt="Foto de perfil de Carlos Méndez">
+                    <div class="reseña-derecha">
+                        <h3 class="reseña-nombre">Carlos Méndez</h3>
+                        <p class="reseña-calificacion">⭐⭐⭐</p>
+                    </div>
+                </div>
+                <p class="reseña-comentario">El producto cumple con lo esperado, aunque el empaque llegó un poco dañado. Sugiero mejorar el embalaje.</p>
+            </article>
+            <article class="reseña-detalles">
+                <div class="reseña-arriba">
+                    <img class="reseña-imagen" src="https://via.placeholder.com/50" alt="Foto de perfil de Lucía Fernández">
+                    <div class="reseña-derecha">
+                        <h3 class="reseña-nombre">Lucía Fernández</h3>
+                        <p class="reseña-calificacion">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <p class="reseña-comentario">Muy contenta con la atención al cliente. Resolvieron mis dudas rápidamente y el producto es de gran calidad.</p>
+            </article>
+        </section>        
+
+        <div class="separador">
+            <h2 id="contacto">Contacto</h2>
+        </div>
+
+        <section id="contenedor-contacto" class="contenedor-contacto">
+                <form action="https://formspree.io/f/xqakkeeg" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50"aria-label="Nombre">                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" aria-label="Correo electrónico">                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required minlength="10" aria-label="Mensaje"></textarea>
+                    <button type="submit" aria-label="Enviar formulario">Enviar</button>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="texto-footer">© 2024 SonidoTotal</p>
+    </footer>
 
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
