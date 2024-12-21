@@ -1,0 +1,74 @@
+[
+    {
+        "id": "flauta-01",
+        "titulo": "Flauta 01",
+        "imagen": "./img/flautas/01.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "flauta-02",
+        "titulo": "Flauta 02",
+        "imagen": "./img/flautas/02.jpg",
+        "precio": 2000
+    },
+    {
+        "id": "flauta-03",
+        "titulo": "Flauta 03",
+        "imagen": "./img/flautas/03.jpg",
+        "precio": 3000
+    },
+    {
+        "id": "flauta-01",
+        "titulo": "Flauta 04",
+        "imagen": "./img/flautas/04.jpg",
+        "precio": 4000
+    },
+    {
+        "id": "piano-01",
+        "titulo": "Piano 01",
+        "imagen": "./img/pianos/01.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "piano-02",
+        "titulo": "Piano 02",
+        "imagen": "./img/pianos/02.jpg",
+        "precio": 2000
+    },
+    {
+        "id": "piano-03",
+        "titulo": "Piano 03",
+        "imagen": "./img/pianos/03.jpg",
+        "precio": 3000
+    },
+    {
+        "id": "piano-04",
+        "titulo": "Piano 04",
+        "imagen": "./img/pianos/04.jpg",
+        "precio": 4000
+    },
+    {
+        "id": "guitarra-01",
+        "titulo": "Guitarra 01",
+        "imagen": "./img/guitarras/01.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "guitarra-02",
+        "titulo": "Guitarra 02",
+        "imagen": "./img/guitarras/02.jpg",
+        "precio": 2000
+    },
+    {
+        "id": "guitarra-03",
+        "titulo": "Guitarra 03",
+        "imagen": "./img/guitarras/03.jpg",
+        "precio": 3000
+    },
+    {
+        "id": "guitarra-04",
+        "titulo": "Guitarra 04",
+        "imagen": "./img/guitarras/04.jpg",
+        "precio": 4000
+    }
+]
